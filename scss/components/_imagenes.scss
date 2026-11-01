@@ -1,0 +1,57 @@
+@use 'variables';
+@use 'mixin';
+
+
+// Variables
+$color-texto: #444;
+$sombra: 0px 4px 8px rgba(0, 0, 0, 0.2);
+$padding-seccion: 30px;
+$gap-galeria: 40px;
+$ancho-max-img: 850px;
+
+// Placeholder para imagen
+%imagen-basica {
+  width: 85%;
+  height: auto;
+  max-width: $ancho-max-img;
+  box-shadow: $sombra;
+  display: block;
+}
+
+// Mixin para centrar
+@mixin centro-columna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+// Estilos de galería
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: $gap-galeria;
+  padding: $padding-seccion;
+
+  .item-galeria {
+    @include centro-columna;
+    max-width: 300px;
+
+    img {
+      @extend %imagen-basica;
+
+      &:hover {
+        width: 100%;
+        box-shadow: $sombra;
+      }
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      color: $color-texto;
+    }
+  }
+}

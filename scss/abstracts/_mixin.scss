@@ -1,0 +1,13 @@
+@mixin sombra-img($intensidad: 0.2) {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, $intensidad);
+  }
+  
+  @mixin modo-oscuro {
+    @if $modo-oscuro {
+      background-color: #222;
+      color: white;
+    } @else {
+      background-color: #fff;
+      color: black;
+    }
+  }

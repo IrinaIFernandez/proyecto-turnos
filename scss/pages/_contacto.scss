@@ -1,0 +1,26 @@
+@use 'variables';
+
+.formulario-contacto {
+  padding: 2rem;
+  background-color: #f2f2f2;
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: variables.$fuente-principal;
+  }
+
+  button {
+    background-color: black;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+  }
+}

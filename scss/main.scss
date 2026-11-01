@@ -1,0 +1,23 @@
+//abstracts
+
+@use 'abstracts/variables' ;
+@use 'abstracts/mixin' ;
+
+//base
+@use 'base/base';
+@use 'base/reset' ;
+
+// layout
+@use 'layout/footer' ;
+@use 'layout/header' ;
+@use 'layout/nav' ;
+
+//components 
+@use 'components/imagenes' ;
+@use 'components/servicios' ;
+
+//pages
+@use 'pages/contacto' ;
+@use 'pages/info' ;
+@use 'pages/index.';
+

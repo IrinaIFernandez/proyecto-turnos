@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffaf8">
+  <title>Contacto y turnos | Lashes para vos</title>
+  <meta name="description" content="Consultá por tu turno para extensiones de pestañas con Lashes para vos por WhatsApp.">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a class="logo-nombre" href="../index.html" aria-label="Lashes para vos, inicio"><img src="../imagenes/logo.jpg" alt="" class="logo"><span class="nombre-sitio">Lashes para vos</span></a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="../index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="info.html">Cuidados</a><a href="imagenes.html">Trabajos</a><a href="contacto.html" aria-current="page">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="contacto-container">
+      <div class="texto-contacto">
+        <span class="eyebrow">Hablemos</span>
+        <h2>¿Querés agendar una cita?</h2>
+        <p>Completá tus datos y se abrirá WhatsApp con el mensaje listo para enviar. Te confirmaré la disponibilidad por ese medio.</p>
+        <p class="whatsapp-contacto">WhatsApp: 11 2563-4595</p>
+        <p class="nota">La fecha y el horario que elijas son una preferencia. El turno queda confirmado cuando recibas mi respuesta.</p>
+      </div>
+      <div class="ubicacion-contacto">
+        <h3>¿Dónde nos encontramos?</h3>
+        <img src="../imagenes/salon_ilustrativo.png" alt="Espacio de atención de Lashes para vos" loading="lazy">
+        <h4 class="saludo">¡Te espero!</h4>
+        <a href="https://maps.app.goo.gl/R2UUNQQf82mBaiZF9" target="_blank" rel="noopener noreferrer" class="ubicacion-btn">Abrir ubicación en Maps</a>
+      </div>
+    </section>
+    <section class="turnos" aria-labelledby="titulo-turnos">
+      <h2 id="titulo-turnos">Consultá por tu turno</h2>
+      <p class="ayuda-formulario">Al enviar, se abrirá WhatsApp para que revises y mandes tu consulta.</p>
+      <form id="form-turno">
+        <label for="nombre">Nombre completo<input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required></label>
+        <label for="fecha">Fecha preferida<input type="date" id="fecha" name="fecha" required></label>
+        <label for="hora">Horario preferido<input type="time" id="hora" name="hora" required></label>
+        <label for="servicio">Servicio<select id="servicio" name="servicio" required>
+          <option value="Volumen clásico">Volumen clásico</option><option value="Volumen ruso">Volumen ruso</option><option value="Megavolumen">Megavolumen</option>
+        </select></label>
+        <button type="submit">Continuar por WhatsApp</button>
+      </form>
+    </section>
+  </main>
+  <footer><div class="footer-container"><img src="../imagenes/logo.jpg" alt="" aria-hidden="true"><p>Lashes para vos · Extensiones de pestañas</p></div></footer>
+  <script src="../Javascript/turnos.js" defer></script>
+</body>
+</html>
